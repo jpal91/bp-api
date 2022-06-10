@@ -14,6 +14,8 @@ app.use(
     })
 );
 
+app.use(require('./db/index'))
+
 app.listen(port, () => {
     console.log(`App is running on port: ${port}`);
     
